@@ -1,0 +1,95 @@
+body {
+  background: #ff00cc;
+  background: linear-gradient(to right, #333399, #ff00cc);
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#wrapper {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 1em;
+  color: #666;
+}
+
+form p {
+  margin: 20px 0;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1em;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.guessField {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px);
+}
+
+.guessSubmit {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.guessSubmit:hover {
+  background-color: #0056b3;
+}
+
+/* Result Paragraphs */
+.resultParas {
+  margin-top: 20px;
+}
+
+.resultParas p {
+  font-size: 1em;
+  color: #333;
+}
+
+.resultParas .guesses,
+.resultParas .lastResult {
+  font-weight: bold;
+}
+
+.resultParas .lowOrHi {
+  color: #d9534f;
+  font-weight: bold;
+  margin-top: 10px;
+}
