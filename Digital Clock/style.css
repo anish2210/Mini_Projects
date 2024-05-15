@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+#banner {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+#clock {
+    font-size: 64px;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+}
