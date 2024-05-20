@@ -1,20 +1,22 @@
+let hex;
 const randomHex = function () {
-  const string = "0123456789ABCEDF";
-  let hex = "#";
-
-  for (let i = 0; i < 6; i++) {
-    hex += string[Math.floor(Math.random() * 16)];
-  }
-  return hex;
+    const string = "0123456789ABCEDF";
+    hex = "#";
+    
+    for (let i = 0; i < 6; i++) {
+        hex += string[Math.floor(Math.random() * 16)];
+    }
+    return hex;
 };
 
 let interval;
 
 const startChange = function () {
-  interval = setInterval(changeBg, 1000);
-  function changeBg() {
-    document.body.style.backgroundColor = randomHex();
-  }
+    interval = setInterval(changeBg, 1000);
+    function changeBg() {
+        document.body.style.backgroundColor = randomHex();
+        document.getElementById('code').textContent = `Color code: ${hex}`
+    }
 };
 
 const stopChange = function () {
