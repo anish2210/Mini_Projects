@@ -12,7 +12,9 @@ const randomHex = function () {
 let interval;
 
 const startChange = function () {
-    interval = setInterval(changeBg, 1000);
+    if(!interval){
+        interval = setInterval(changeBg, 1000);
+    }
     function changeBg() {
         document.body.style.backgroundColor = randomHex();
         document.getElementById('code').textContent = `Color code: ${hex}`
@@ -21,6 +23,7 @@ const startChange = function () {
 
 const stopChange = function () {
     clearInterval(interval);
+    interval = null;
 }
 
 const startBtn = document.querySelector("#start");
