@@ -1,0 +1,1 @@
+# Mini Projects for Hacktoberfest 2024
